@@ -93,7 +93,8 @@ public class MainActivity extends AppCompatActivity {
         else if (youthRadio.isChecked()) { category = "Youth";}
     }
             public void onclicked(View view) {
-
+                
+                //passes category to second activity
                 Intent intent = new Intent(MainActivity.this, ResultsActivity.class);
                 intent.putExtra("category", category); // pass "category" to the next Activity
                 startActivity(intent);
